@@ -11,7 +11,9 @@ function App() {
   const productData = [
     {tovarImg: "../images/product-01.jpg", tovarName: "Esprit Ruffle Shirt", price: "$16.64"},
     {tovarImg: "../images/product-01.jpg", tovarName: "Esprit Ruffle Shirt", price: "$16.64"},
+    {tovarImg: "../images/product-01.jpg", tovarName: "Esprit Ruffle Shirt", price: "$16.64"},
     {tovarImg: "../images/product-01.jpg", tovarName: "Esprit Ruffle Shirt", price: "$16.64"}
+
   ]
   return (
     <div className='container'>
