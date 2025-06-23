@@ -1,9 +1,9 @@
 import "../product/product.css";
 import ProductCard from "./product-card/product-card";
 
-const Product = ({productData}) => {
-    console.log(productData);
-    
+const Product = ({ productData }) => {
+  console.log(productData);
+
   return (
     <div className="mt-5 mb-5">
       <div className="product">
@@ -30,14 +30,15 @@ const Product = ({productData}) => {
           </div>
         </div>
 
-        <div className="productCards">
-            {
-                productData.map(item => (
-                    <ProductCard tovarImg = {item.tovarImg} tovarName = {item.tovarName} price = {item.price}/>
-                ))
-            }
+        <div className="productCards d-flex align-items-center">
+          {productData.map((item) => (
+            <ProductCard
+              tovarImg={item.tovarImg}
+              tovarName={item.tovarName}
+              price={item.price}
+            />
+          ))}
         </div>
-        
       </div>
     </div>
   );
